@@ -15,7 +15,7 @@ ToDoList.prototype.add = function (item) {
     if (typeof item == "string") {
         // only add item if it is a string
         this.list.push(item);
-        this.list.sort();
+        //this.list.sort();
     }
 }
 
@@ -33,6 +33,20 @@ ToDoList.prototype.remove = function (item) {
         // remove item by position
         this.list.splice(item, 1);
     }
+}
+
+ToDoList.prototype.toObjectArray = function () {
+    var items = this.list.map(function (i) {
+        return { name: i };
+    });
+
+    return items;
+}
+
+ToDoList.prototype.fromObjectArray = function (array) {
+    list = array.map(function (i) {
+        return i.name;
+    });
 }
 
 ToDoList.prototype.createDom = function () {

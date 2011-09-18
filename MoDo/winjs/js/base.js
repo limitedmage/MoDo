@@ -571,7 +571,7 @@
             //
             var promise = listener.promise;
             var onError = listener.onError;
-            try {
+            //try {
                 if (onError) {
                     // If we have a onError handler then the fulfillment value of the 
                     // ThenPromise is the result of calling the onError handler
@@ -583,13 +583,13 @@
                     //
                     promise._chainedError(value, notifier);
                 }
-            } catch (exception) {
+            //} catch (exception) {
                 // If an exception occurs while executing the users onError handler then
                 // the ThenPromise is in error with the exception value as its fulfillment
                 // value.
                 //
-                promise._exception(exception);
-            }
+            //    promise._exception(exception);
+            //}
         }
     }
 
