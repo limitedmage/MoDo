@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+  <Identity
+    Name="2252e575-1757-4b10-9280-a617f2efc9a0"
+    Version="1.0.0.0"
+    Publisher="CN=julip" />
+
+  <Properties>
+    <DisplayName>MoDo</DisplayName>
+    <Description>MoDo</Description>
+    <PublisherDisplayName>julip</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="en-US" />
+  </Resources>
+
+  <Applications>
+    <Application 
+      Id="App"
+      StartPage="default.html">
+
+      <VisualElements
+        DisplayName="MoDo"
+        Logo="images\logo.png"
+        SmallLogo="images\smalllogo.png"
+        Description="MoDo"
+        ForegroundText="light"
+        BackgroundColor="#0084FF">
+
+        <DefaultTile ShowName="true" />
+        <SplashScreen Image="images\splashscreen.png" />
+
+      </VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+
+</Package>
