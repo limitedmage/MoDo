@@ -12,4 +12,4 @@ Features include:
 * Multiselect for batch completing
 * Reordering items
 
-![](http://i.imgur.com/zZ2I7.png)
+![](http://i.imgur.com/ICUw0.png)
